@@ -64,7 +64,7 @@
             </select>
 
             <!-- When button is clicked functionality will run -->
-            <button onclick="logic()"> Add Pokemon </button>
+            <button onclick="addPokemon()"> Add Pokemon </button>
 
         </div>
 
@@ -80,12 +80,18 @@
         <!-- Main App Space -->
         <!-- Display all object in here using DOM api -->
         <div id="app">
-
+            <!--this is the parent element-->
             <ul id="pokedex-entries">
-                <!-- Append entries here -->
+
+                 <!--this is the new list element (child)-->
+                 <li class="${pokemon[0]}">
+                    <span>${pokemon[0]}</span>
+                    <span>${pokemon[1]}</span>
+                    <span>${pokemon[2]}</span>
+                <li>
             </ul>
 
-        </div>
+        </div> 
 
         <div class="side">
 

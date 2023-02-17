@@ -1,24 +1,35 @@
-function logic() {
+function addPokemon() {
 
     // First thing to do is get input from user
     let name = document.getElementById("name");
     let type = document.getElementById("type");
     let region = document.getElementById("region");
 
-
-    // Will only give objects
-    console.log( name + " - " + type + " - " + region + " region") // remove once you have clear understanding
-
-
     // Get String values of variables
     name = name.value;
     type = type.value;
     region = region.value;
     
+    let pokemon = [];
 
-    // Can log them since they are now pure Strings
-    console.log( name + " - " + type + " - " + region + " region") // remove once you have clear understanding
+    pokemon.push (name, type,region);
 
+let liEl = document.createElement("li");
+let theSpan = document.createElement("span");
+
+let node1 = document.createTextNode(pokemon[0] + " ");
+let node2 = document.createTextNode(pokemon[1] + " ");
+let node3 = document.createTextNode(pokemon[2] + " ");
+
+theSpan.appendChild(node1);
+theSpan.appendChild(node2);
+theSpan.appendChild(node3);
+
+liEl.appendChild(theSpan);
+document.getElementById("theUl").appendChild(liEl);
+
+console.log(pokemon);
+console.log(liEl )
 /*-----------------------------------------------
  * Add your solution code here
  *---------------------------------------------*/
