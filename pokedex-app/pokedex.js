@@ -31,10 +31,12 @@ function myBtn(){
                 <input type="submit"></input>
             </form>
 
+function myBtn(){
+
     liEl.innerHTML (previewButton);
 
     document.getElementById("pokedexEntries").appendChild(liEl);
 
     console.log(pokemon);
     console.log(liEl);
-}
+}}
