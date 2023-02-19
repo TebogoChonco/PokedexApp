@@ -1,63 +1,40 @@
-var newLi = document.createElement("li");
-var newP = document.createElement("p")
-var entries = document.getElementById("pokedex-entries").getElementsByTagName("ul")[0];
-newLi.appendChild(newP);
+function myBtn(){
 
-let name = document.getElementById("name");
-let type = document.getElementById("type");
-let region = document.getElementById("region");
+    let name = document.getElementById("name").value;
+    let type = document.getElementById("type").value;
+    let region = document.getElementById("region").value;
 
-"name" = "name".value;
-"type" = "type".value;
-"region" = "region".value;
+    let pokemon = [];
 
-var myArray = [
-    "name", "type", "region",
-]
+    pokemon.push("name", "type", "region");
 
-function logic() {
+    let liEl = document.createElement("li");
+    let theSpan = document.createElement("span");
 
-    let result;
-    if ("name" !== "" && "type" !== "" && "region" !== "") {
-        result = ("name", "type", "region")
-    }
+    let node1 = document.createTextNode(pokemon[0] + "  ");
+    let node2 = document.createTextNode(pokemon[1] + "  ");
+    let node3 = document.createTextNode(pokemon[2] + "  ");
 
-    else {
-        alert("Please provide all inputs")
+    theSpan.appendChild(node1);
+    theSpan.appendChild(node2);
+    theSpan.appendChild(node3);
 
-    newP.document.getElementById("app").innerHTML = myArray
-    }}
-/* <li class="${pokemon[0]}">
-<span>${pokemon[0]}</span>
-<span>${pokemon[1]}</span>
-<span>${pokemon[2]}</span>
-<li></li> */
+    liEl.appendChild(theSpan);
+    document.getElementById("pokedexEntries").appendChild(liEl);
 
-/* let result;
+    console.log(pokemon);
+    console.log(liEl);
 
-   if (inputOne !== "" && inputTwo !== "") {
+    const previewButton = 
+            <form action="http://google.com/search" target="_blank">
+                <input name="q" hidden value="${name}"></input>
+                <input type="submit"></input>
+            </form>
 
-       inputOne = parseInt(inputOne);
-       inputTwo = parseInt(inputTwo);
+    liEl.innerHTML (previewButton);
 
-       if (theOperator == "+") {
-           result = inputOne + inputTwo;
-       }
-       else if (theOperator == "-") {
-           result = inputOne - inputTwo;
-       }
-       else if (theOperator == "/") {
-           result = inputOne / inputTwo;
-       }
-       else if (theOperator == "*") {
-           result = inputOne * inputTwo;
-       }
-       else {
-           alert("Hacked!");
-       }
+    document.getElementById("pokedexEntries").appendChild(liEl);
 
-       document.getElementById("output").innerHTML = result;
-   }
-   else {
-       alert("Please provide all inputs");
-   } */
+    console.log(pokemon);
+    console.log(liEl);
+}
