@@ -40,4 +40,3 @@ document.getElementById("pokedexEntries").appendChild(liEl);
         console.log(pokemon);
         console.log(liEl);
 }
-
