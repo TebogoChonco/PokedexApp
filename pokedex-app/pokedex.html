@@ -41,7 +41,6 @@
                 <option value="ground">Ground</option>
                 <option value="rock">Rock</option>
                 <option value="psychic">Psychic</option>
-                <option value="fighting">Fighting</option>
                 <option value="bug">Bug</option>
                 <option value="ghost">Ghost</option>
                 <option value="steel">Steel</option>
@@ -65,7 +64,7 @@
             </select>
 
             <!-- When button is clicked functionality will run -->
-            <button onclick="myBtn()"> Add Pokemon </button>
+            <button id="clickMe" onclick="myBtn(display)">Add Pokemon</button>
 
         </div>
 
@@ -78,13 +77,10 @@
 
         </div>
 
-        <!-- Main App Space -->
-        <!-- Display all object in here using DOM api -->
         <div id="app">
 
             <ul id="pokedexEntries">
               
-                <!-- Append entries here -->
             </ul>
 
         </div>

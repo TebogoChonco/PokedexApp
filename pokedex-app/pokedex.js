@@ -1,8 +1,8 @@
-function myBtn(){
-
-    let name = document.getElementById("name").value;
-    let type = document.getElementById("type").value;
-    let region = document.getElementById("region").value;
+function myBtn(display){
+         display.preventDefault()
+     "name" = document.getElementById("name").value;
+     "type" = document.getElementById("type").value;
+     "region" = document.getElementById("region").value;
 
     let pokemon = [];
 
@@ -19,24 +19,25 @@ function myBtn(){
     theSpan.appendChild(node2);
     theSpan.appendChild(node3);
 
-    liEl.appendChild(theSpan);
-    document.getElementById("pokedexEntries").appendChild(liEl);
 
-    console.log(pokemon);
-    console.log(liEl);
+liEl.appendChild(theSpan);
+document.getElementById("pokedexEntries").appendChild(liEl);
 
-    const previewButton = 
-            <form action="http://google.com/search" target="_blank">
-                <input name="q" hidden value="${name}"></input>
-                <input type="submit"></input>
-            </form>
+        console.log(pokemon);
+        console.log(liEl);
 
-function myBtn(){
+        const previewButton =
+        <form action="http://google.com/search" target="_blank">
+            <input name="q" hidden value="${name}"></input>
+            <input type="submit"></input>
+        </form>
 
-    liEl.innerHTML (previewButton);
 
-    document.getElementById("pokedexEntries").appendChild(liEl);
+        liEl.innerHTML (previewButton);
 
-    console.log(pokemon);
-    console.log(liEl);
-}}
+document.getElementById("pokedexEntries").appendChild(liEl);
+
+        console.log(pokemon);
+        console.log(liEl);
+}
+
